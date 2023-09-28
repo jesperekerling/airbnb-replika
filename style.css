@@ -103,22 +103,26 @@ footer {
     left: 0;
     right: 0;
     background-color: var(--background-color);
-    border-top: 1px solid var(--border-color);
+    border-top: var(--border-color) 1px solid;
+
 }
-.footer__actions {
+
+.footer__actions {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 16px;
-    padding: 8px 0;
-}
-.footer__actions  .option {
-    padding-bottom: 0;
-}
-.footer__actions  .option__icon {
-    font-size: 2rem;
+    padding: 8px;
+
 }
 
+.footer__actions .option {
+    padding-bottom: 0;
+}
+
+.footer__actions .option__icon {
+    font-size: 2em;
+}
 @media screen and (min-width: 848px) {
     .logo {
         display: block;

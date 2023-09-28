@@ -1,4 +1,6 @@
 @import "header";
+@import "main";
+@import "footer";
 
 * {
     margin: 0;
@@ -19,40 +21,6 @@ body {
     overflow: hidden;
 }
 
-.option {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 16px;
-    align-items: center;
-    color: var(--border-color);
-    font-size: 0.875rem;
-}
-
-.option__icon {
-    font-size: 3em;
-}
-main {
-    position: relative;
-    overflow: auto;
-}
-.listings {
-    width: 100%;
-    padding: 0 16px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-}
-.listing {
-    width: 100%;
-    min-width: 250px;
-    flex: 1 0 300px;
-    padding: 16px;
-}
-.listing__image {
-    width: 100%;
-    border-radius: 2rem;
-    margin-bottom: 1rem;
-}
 
 
 @media screen and (min-width: 848px) {

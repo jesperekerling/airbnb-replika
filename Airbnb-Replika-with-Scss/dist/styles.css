@@ -51,25 +51,6 @@ header {
   flex-direction: column;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  --background-color: #fff;
-  --border-color: #888;
-}
-
-body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  background-color: #eee;
-  overflow: hidden;
-}
-
 .option {
   display: flex;
   flex-direction: column;
@@ -132,6 +113,25 @@ footer {
 
 .footer__actions .option__icon {
   font-size: 2em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  --background-color: #fff;
+  --border-color: #888;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-color: #eee;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 848px) {

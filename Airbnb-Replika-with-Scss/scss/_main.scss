@@ -24,11 +24,14 @@ main {
 .listing {
     width: 100%;
     min-width: 250px;
-    flex: 1 0 300px;
+    flex: 1 0 400px;
     padding: 16px;
 }
 .listing__image {
     width: 100%;
     border-radius: 2rem;
     margin-bottom: 1rem;
+    max-width: 400px;
+    max-height: 400px;
+    object-fit: cover;
 }

@@ -1,3 +1,4 @@
+@import "variables";
 
 
 .projects {
@@ -7,13 +8,16 @@
 }
 
 .project {
-    background-color: rgb(231, 163, 75), 180);
+    background-color: $background-color;
     padding: 1rem;
     &__image {
         width: 200px;
     }
     &__title {
-        color: red;
+        color: $primary;
+        &:hover {
+            color: $primary-active;
+        }
     }
     &__description {
         font-style: italic;

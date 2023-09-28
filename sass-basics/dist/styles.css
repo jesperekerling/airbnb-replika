@@ -1,0 +1,46 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.project {
+  background-color: #ccc;
+  padding: 1rem;
+}
+.project__image {
+  width: 200px;
+}
+.project__title {
+  color: darkred;
+}
+.project__title:hover {
+  color: red;
+}
+.project__description {
+  font-style: italic;
+}
+.project__cta {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  border: none;
+  background-color: aqua;
+  color: #fff;
+  font-weight: 700;
+}
+.project__cta:hover {
+  background-color: orange;
+}
+.project--dark {
+  background-color: #222;
+  color: #fff;
+}
+.project .project__cta {
+  background-color: #fff;
+}
+.project .project__cta:hover {
+  background-color: red;
+}
+
+/*# sourceMappingURL=styles.css.map */

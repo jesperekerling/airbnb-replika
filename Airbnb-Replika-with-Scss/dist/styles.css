@@ -1,0 +1,152 @@
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid var(--border-color);
+  padding: 8px 16px 0 16px;
+  background-color: var(--background-color);
+}
+
+.logo {
+  display: none;
+  width: 200px;
+}
+
+.header-filter-container {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.header-search {
+  flex: 1;
+  padding: 8px 16px;
+  box-shadow: var(--border-color) -1px 3px 7px 0;
+  border-radius: 100px;
+  background-color: #fff;
+}
+
+.header-filters {
+  height: 41.45px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-color: var(--border-color);
+}
+
+.header-options {
+  display: flex;
+  flex: nowrap;
+  overflow-x: auto;
+  width: 100%;
+  white-space: nowrap;
+  gap: 16px;
+}
+
+.header-option {
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  --background-color: #fff;
+  --border-color: #888;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-color: #eee;
+  overflow: hidden;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 16px;
+  align-items: center;
+  color: var(--border-color);
+  font-size: 0.875rem;
+}
+
+.option__icon {
+  font-size: 3em;
+}
+
+main {
+  position: relative;
+  overflow: auto;
+}
+
+.listings {
+  width: 100%;
+  padding: 0 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.listing {
+  width: 100%;
+  min-width: 250px;
+  flex: 1 0 300px;
+  padding: 16px;
+}
+
+.listing__image {
+  width: 100%;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--background-color);
+  border-top: var(--border-color) 1px solid;
+}
+
+.footer__actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 8px;
+}
+
+.footer__actions .option {
+  padding-bottom: 0;
+}
+
+.footer__actions .option__icon {
+  font-size: 2em;
+}
+
+@media screen and (min-width: 848px) {
+  .logo {
+    display: block;
+  }
+  .header-filters, .header-filters--mobile {
+    display: normal;
+  }
+  .header-filters.header-filters--desktop {
+    display: block;
+  }
+  .footer {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,26 @@
+footer {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--background-color);
+    border-top: var(--border-color) 1px solid;
+
+}
+
+.footer__actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 8px;
+
+}
+
+.footer__actions .option {
+    padding-bottom: 0;
+}
+
+.footer__actions .option__icon {
+    font-size: 2em;
+}

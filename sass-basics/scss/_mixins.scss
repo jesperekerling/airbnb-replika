@@ -1,0 +1,11 @@
+@import "variables";
+
+// @param (Color $bg - background color)
+// @param (Color $fg - foreground color)
+@mixin card($bg:$background-color, $fg:$foreground-color) {
+    background-color: $bg;
+    color: $fg;
+    padding: 16px;
+    border-radius: 4px;
+    box-shadow: 0 0 1px rgba($bg, .25);
+}

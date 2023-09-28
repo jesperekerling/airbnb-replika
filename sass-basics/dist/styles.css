@@ -6,7 +6,15 @@
 
 .project {
   background-color: #ccc;
+  color: purple;
+  padding: 16px;
+  border-radius: 4px;
+  box-shadow: 0 0 1px rgba(204, 204, 204, 0.25);
+  display: flex;
+  background-color: #ccc;
   padding: 1rem;
+  gap: 16px;
+  align-items: flex-start;
 }
 .project__image {
   width: 200px;
@@ -41,6 +49,11 @@
 }
 .project .project__cta:hover {
   background-color: red;
+}
+@media screen and (max-width: 768px) {
+  .project {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

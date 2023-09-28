@@ -1,5 +1,5 @@
 @import "variables";
-
+@import "mixins";
 
 .projects {
     display: flex;
@@ -8,8 +8,12 @@
 }
 
 .project {
+    @include card;
+    display: flex;
     background-color: $background-color;
     padding: 1rem;
+    gap: 16px;
+    align-items: flex-start;
     &__image {
         width: 200px;
     }
@@ -44,5 +48,8 @@
         &:hover {
             background-color: red;
         }
+    }
+    @media screen and (max-width: $breakpoints-sm) {
+        flex-direction: column;
     }
 }

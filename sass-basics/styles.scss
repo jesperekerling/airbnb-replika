@@ -1,0 +1,44 @@
+
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.project {
+    background-color: rgb(231, 163, 75), 180);
+    padding: 1rem;
+    &__image {
+        width: 200px;
+    }
+    &__title {
+        color: red;
+    }
+    &__description {
+        font-style: italic;
+    }
+    &__cta {
+        display: block;
+        width: 100%;
+        padding: 8px 16px;
+        border: none;
+
+        background-color: aqua;
+        color: #fff;
+        font-weight: 700;
+        &:hover {
+            background-color: orange;
+        }
+    }
+    &--dark {
+        background-color: #222;
+        color: #fff;
+    }
+    & .project__cta {
+        background-color: #fff;
+        &:hover {
+            background-color: red;
+        }
+    }
+}

@@ -13,6 +13,16 @@ header {
   width: 200px;
 }
 
+header svg {
+  display: inline-block !important;
+}
+
+header input {
+  border: 0;
+  width: 80%;
+  padding: 0.5rem 1rem;
+}
+
 .header-filter-container {
   display: flex;
   gap: 8px;

@@ -23,15 +23,16 @@ header {
     right: 0;
     border-bottom: 1px solid var(--border-color);
     padding: 8px 16px 0 16px;
-    overflow-x: hidden;
     background-color: var(--background-color);
 }
 .logo {
     display: none;
+    width: 200px;
 }
 .header-filter-container {
     display: flex;
     gap: 8px;
+    align-items: center;
 }
 .header-search {
     flex: 1;
@@ -47,6 +48,7 @@ header {
     align-items: center;
     justify-content: center;
     background-color: white;
+    border-color: var(--border-color);
 }
 .header-options {
     display: flex;
@@ -79,7 +81,6 @@ main {
 .listings {
     width: 100%;
     padding: 0 16px;
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
@@ -88,6 +89,7 @@ main {
     width: 100%;
     min-width: 250px;
     flex: 1 0 300px;
+    padding: 16px;
 }
 .listing__image {
     width: 100%;
@@ -123,6 +125,9 @@ footer {
     }
     .header-filters, .header-filters--mobile {
         display: normal;
+    }
+    .header-filters.header-filters--desktop {
+        display: block;
     }
     .footer {
         display: none;
